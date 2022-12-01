@@ -119,6 +119,7 @@ public class Register_Activity extends AppCompatActivity {
                         Log.i("Registered", "Sucessfull");
 //                        Intent intent = new Intent(this, LoginActivity.class);
 //                        startActivity(intent);
+                        startActivity(new Intent(this, Login_Activity.class));
                     }
                 });
 
