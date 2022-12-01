@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HealthY</string>
+    <string name="login_cred">Login Credential</string>
+    <string name="eg_john">e.g John</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="notamember">Not a member?</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="personalize">Personalize</string>
+    <string name="ex_sugg">Suggested Exercise</string>
+    <string name="dietChart">Diet Chart</string>
+    <string name="userspick">User\'s Pick</string>
+    <string name="dosanddonts">Dos and Don\'ts</string>
+    <string name="title_activity_personalize">Personalize</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="signupasanewuser">signUpAsaNewUser</string>
+</resources>
