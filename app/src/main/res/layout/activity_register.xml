@@ -10,12 +10,7 @@
         android:layout_height="match_parent"
         android:layout_margin="8dp"
         android:orientation="vertical">
-        <!--    <include-->
-        <!--        layout="@layout/layout_toolbar_for_non_home_activity"-->
-        <!--        />-->
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_Register_TextInputLayout_Name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,7 +18,7 @@
             app:startIconDrawable="@drawable/icon_person">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Activity_Register_TextInputLayout_EditText_Name"
+                android:id="@+id/edt_txt_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
@@ -33,7 +28,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_Register_TextInputLayout_Email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +35,7 @@
             app:startIconDrawable="@drawable/icon_email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Activity_Register_TextInputLayout_EditText_Email"
+                android:id="@+id/edt_txt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -51,7 +45,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_Register_TextInputLayout_PhoneNumber"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +52,7 @@
             app:startIconDrawable="@drawable/icon_phone_number">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/age"
+                android:id="@+id/edt_txt_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -69,11 +62,9 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_Register_TextInputLayout_UserName"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:hint="Height"
             app:startIconDrawable="@drawable/icon_person">
 
@@ -95,7 +86,7 @@
             app:startIconDrawable="@drawable/icon_person">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/weight"
+                android:id="@+id/edt_txt_wt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -105,16 +96,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Spinner
-            android:layout_margin="4dp"
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/rectangle_background"
             android:entries="@array/profession" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_Register_TextInputLayout_Password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,7 +113,7 @@
             app:startIconDrawable="@drawable/icon_lock">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Activity_Register_TextInputLayout_EditText_Password"
+                android:id="@+id/edt_txt_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -133,7 +123,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_ContactSendMessage_TextInputLayout_ConfirmPassword"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,7 +131,7 @@
             app:startIconDrawable="@drawable/icon_lock">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Activity_Register_TextInputLayout_EditText_ConfirmPassword"
+                android:id="@+id/edt_txt_con_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -153,7 +142,7 @@
 
 
         <ProgressBar
-            android:id="@+id/ActivityRegister_ProgressBar"
+            android:id="@+id/progressBar"
             style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -166,7 +155,7 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Register_Button_Submit"
+                android:id="@+id/btn_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -174,7 +163,7 @@
                 android:textAllCaps="false" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Activity_Register_Button_Cancel"
+                android:id="@+id/btn_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

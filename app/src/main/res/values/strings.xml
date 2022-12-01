@@ -23,11 +23,9 @@
     <string name="login_failed">"Login failed"</string>
     <string name="signupasanewuser">signUpAsaNewUser</string>
     <string-array name="profession">
-        <item>Quantity</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>Select Profession</item>
+        <item>Student</item>
+        <item>Employee</item>
+        <item>Businessman</item>
     </string-array>
 </resources>
