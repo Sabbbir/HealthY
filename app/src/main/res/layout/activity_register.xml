@@ -73,6 +73,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:hint="Height"
             app:startIconDrawable="@drawable/icon_person">
 
@@ -103,23 +104,14 @@
                 android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Activity_SearchBlood_TextInputLayout_BloodGroup"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        <Spinner
+            android:layout_margin="4dp"
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Division"
-            app:errorEnabled="true"
-            app:helperTextEnabled="true">
-
-            <AutoCompleteTextView
-                android:id="@+id/Activity_SearchBlood_TextInputLayout_AutoCompleteTextView_BloodGroup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-                android:maxLines="1"
-                android:textColor="@color/black" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_background"
+            android:entries="@array/profession" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/Activity_Register_TextInputLayout_Password"

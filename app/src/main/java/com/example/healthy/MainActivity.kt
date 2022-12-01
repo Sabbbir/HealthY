@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-      //  startActivity(Intent(this, Register_Activity::class.java))
+        startActivity(Intent(this, Register_Activity::class.java))
 
 //        workout_Login_cred_submit.setOnClickListener {
 //            val login_submit = Intent(this, MenuPage::class.java)
