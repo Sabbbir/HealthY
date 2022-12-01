@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,6 +29,7 @@ public class Register_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         Button submit = findViewById(R.id.btn_submit);
+        //Register("khale@gmail.com","123456");
         submit.setOnClickListener(view -> {
             checkInfo();
         });
@@ -86,8 +88,10 @@ public class Register_Activity extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         String prof = spinner.getSelectedItem().toString();
+        Spinner spinner2 = (Spinner) findViewById(R.id.gender);
+        String gen = spinner2.getSelectedItem().toString();
 
-        //  Register(email, password);
+
         HashMap<String, Object> Data = new HashMap<>();
         Data.put("Name", name);
         Data.put("Email", email);
@@ -95,10 +99,11 @@ public class Register_Activity extends AppCompatActivity {
         Data.put("Password", password);
         Data.put("Height", height);
         Data.put("Profession", prof);
+        Data.put("Gender", gen);
         Log.i("DataGet", String.valueOf(Data));
 
-
-        //  setDataToDatabase(Data);
+        Register(email, password);
+        setDataToDatabase(Data);
 
 
     }
@@ -111,9 +116,25 @@ public class Register_Activity extends AppCompatActivity {
                     if (!task.isSuccessful()) {
                         Log.i("Registraion Failed", "Failed");
                     } else {
-//                        Log.i("Registered", "Sucessfull");
+                        Log.i("Registered", "Sucessfull");
 //                        Intent intent = new Intent(this, LoginActivity.class);
 //                        startActivity(intent);
+                    }
+                });
+
+    }
+
+    private void setDataToDatabase(HashMap<String, Object> Data) {
+        String email = (String) Data.get("Email");
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("UserInfo")
+                .document(email)
+                .set(Data)
+                .addOnCompleteListener((Task<Void> task) -> {
+                    if (!task.isSuccessful()) {
+                        ;
+                    } else {
+                        Log.i("Added to Database", "Sucessfull");
                     }
                 });
 
