@@ -25,6 +25,8 @@ public class Login_Activity extends AppCompatActivity {
         register.setOnClickListener((view) -> {
             startActivity(new Intent(this, Register_Activity.class));
         });
+
+
         Button login = findViewById(R.id.submit);
         login.setOnClickListener(view -> {
 
@@ -43,7 +45,13 @@ public class Login_Activity extends AppCompatActivity {
                 .addOnCompleteListener((Task<AuthResult> task) -> {
                     if (!task.isSuccessful()) {
                         Log.i("Curr Logined", "Failed");
-                        ;
+
+//                        Button login = findViewById(R.id.submit);
+//
+//                                login.setOnClickListener((view -> {
+//                                    startActivity(new Intent(this, MenuPage.class));
+//                                }));
+
                     } else {
                         Log.i("Curr Logined", "Successfully");
 

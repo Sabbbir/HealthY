@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ash">#B1B1B1</color>
     <color name="workout_color_bg">#c0e3d0</color>
+    <color name="toolbar_color_control_normal">#0C0A0A</color>
+    <color name="color_accent">#0D8904</color>
+    <color name="colHighlighted">#C4C4C4</color>
+
 </resources>

@@ -21,7 +21,7 @@
             android:layout_height="240dp"
             app:srcCompat="@drawable/bg"
             android:layout_marginBottom="10dp"
-            />
+            android:contentDescription="TODO" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,28 +49,30 @@
                     android:layout_marginTop="10dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     >
+
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/ET_username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/eg_john"
-                        android:inputType="textPersonName"
                         android:backgroundTint="@color/teal_200"
-                        />
+                        android:hint="@string/mail"
+                        android:inputType="textPersonName"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         >
+
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/ET_password"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:backgroundTint="@color/teal_200"
                             android:hint="@string/password"
                             android:inputType="textPassword"
-                            android:backgroundTint="@color/teal_200"
-                            />
+                            tools:ignore="SpeakableTextPresentCheck" />
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/submit"
                             android:layout_width="match_parent"
@@ -85,21 +87,23 @@
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/notamember"
             android:gravity="center"
-            android:textSize="16sp"
+            android:text="@string/notamember"
+            android:textColor="#00695C"
 
-            />
+            android:textSize="16sp" />
+
         <Button
             android:id="@+id/sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/signup"
             android:backgroundTint="@color/teal_200"
-            />
+            android:text="@string/signup"
+            android:textColor="#004D40" />
     </LinearLayout>
 
 </LinearLayout>

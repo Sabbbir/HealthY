@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HealthY</string>
     <string name="login_cred">Login Credential</string>
-    <string name="eg_john">e.g John</string>
+    <string name="mail">Email</string>
     <string name="password">Password</string>
     <string name="submit">Submit</string>
     <string name="notamember">Not a member?</string>
@@ -22,6 +22,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="signupasanewuser">signUpAsaNewUser</string>
+    <string name="todo">Do\'s and Don\'ts</string>
+    <string name="name">Name</string>
+    <string name="height">Height</string>
     <string-array name="profession">
         <item>Select Profession</item>
         <item>Student</item>

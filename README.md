@@ -4,5 +4,5 @@ This application is for my University project. This project is for my 2nd year 2
 // khalek change
 // eibaar dekh
 // kire khalek, valo? sob oke?
-//okay-2--2-
-///okat3
+// okay-2--2-
+// okat3

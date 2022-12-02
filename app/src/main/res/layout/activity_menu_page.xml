@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_bg"
     tools:context=".MenuPage">
-    <Button
-        android:id="@+id/personalize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/personalize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
 
     <Button
         android:id="@+id/dietchart"
@@ -29,18 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.808" />
-
-    <Button
-        android:id="@+id/ex_suggestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ex_sugg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
 
     <Button
         android:id="@+id/users_choice"
