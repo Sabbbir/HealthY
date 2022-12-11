@@ -1,8 +1,1 @@
-# HealthY
-This application is for my University project. This project is for my 2nd year 2nd semester final project for Mobile Application Development. In this application user can get suggestion of exercise based on their BMI, Lifestyle and habits. The project is supervised by Abu Rafe Md Jamil.
-// pushed
-// khalek change
-// eibaar dekh
-// kire khalek, valo? sob oke?
-// okay-2--2-
-// okat3
+This Project aims to solve the obesity problem that the world is going through. People are getting either really obese or really skinny. Both are bad for health. Moreover we are getting busier day by day. Choosing a healthy meal plan and a good diet with a combination of a little bit daily exercise can help us to prevent some some major diseases. 
